@@ -1,13 +1,18 @@
-let name = nasir_hussain
-let place = karachi
-let age = 30
-let profession = software_engineer
-let job = AI_engineer
-let job_place = modulers
-let weight_kg = 70
-let height_ft = 5.8
-let income_usd = 1000
-
-let weight_pd = weight_kg*2.2
-
-console.log(weight_pd)
+let names = []
+for(let a = 0 ; a<5 ; a++){
+    let username = prompt("create a username")
+    if (username!="admin" && username!= "ADMIN" && username!= "Admin"){
+        if (username.length>=5 && username.length<=20){
+            names.push(username)
+            console.log("username added")
+            }
+        else{
+        console.log("invalid name")
+        
+        }
+    
+    }
+    else{
+        console.log("invalid name")
+    }
+}
